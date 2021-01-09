@@ -19,6 +19,7 @@ body {
   height: 294px;
   width: 200px;
   position: relative;
+  margin: auto;
 }
 
 #character .background {
