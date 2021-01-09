@@ -15,8 +15,10 @@ body {
 }
 
 #character {
-  height: 444px;
-  width: 302px;
+  height: 147%;
+  width: 100%;
+  max-width: 200px;
+  position: relative;
 }
 
 #character .background {
@@ -24,6 +26,7 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-image: url('assets/character/character-background.svg');
+  position: absolute;
 }
 
 #character .face {
@@ -31,4 +34,5 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-image: url('assets/character/character-expression.svg');
+  position: absolute;
 }
