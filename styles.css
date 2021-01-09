@@ -15,9 +15,8 @@ body {
 }
 
 #character {
-  height: 147%;
-  width: 100%;
-  max-width: 200px;
+  height: 294px;
+  width: 200px;
   position: relative;
 }
 
