@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#story {
+  height: 100vh;
+  width: 100vw;
+}
+
+#background {
+  background-color: #CFE8EF;
+  height: 100%;
+  width: 100%;
+}
