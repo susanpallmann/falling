@@ -49,4 +49,5 @@ body {
   height: 800px;
   width: 1200px;
   filter: blur(10px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
 }
