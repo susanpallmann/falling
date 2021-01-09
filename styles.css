@@ -37,3 +37,10 @@ body {
   background-image: url('assets/character/character-expression.svg');
   position: absolute;
 }
+
+.clouds .cloud {
+  background-repeat: no-repeat;
+  background-image: url('assets/scenery/cloud.svg');
+  height: 400px;
+  width: 600px;
+}
