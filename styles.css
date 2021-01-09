@@ -13,3 +13,22 @@ body {
   height: 100%;
   width: 100%;
 }
+
+#character {
+  height: 444px;
+  width: 302px;
+}
+
+#character .background {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url('assets/character/character-background.svg');
+}
+
+#character .face {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url('assets/character/character-expression.svg');
+}
