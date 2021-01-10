@@ -141,7 +141,6 @@ body {
   height: 294px;
   width: 200px;
   position: relative;
-  margin: auto;
   top: calc(50vh - 147px);
   left: 0;
   transition: all 0.5s;
