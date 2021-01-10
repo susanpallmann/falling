@@ -101,12 +101,12 @@ body {
 }
 
 @-webkit-keyframes cloud {
-  0%   {top: calc(100vh);}
+  0%   {top: 100vh;}
   100% {top: -800px;}
 }
 
 @keyframes cloud {
-  0%   {top: calc(100vh);}
+  0%   {top: 100vh;}
   100% {top: -800px;}
 }
 
@@ -141,17 +141,6 @@ body {
   100% {top: calc(-100vh);}
 }
 
-@-webkit-keyframes branch-2 {
-  0%   {top: calc(100vh);}
-  100% {top: calc(-100vh);}
-}
-
-
-@keyframes branch-2 {
-  0%   {top: calc(100vh);}
-  100% {top: calc(-100vh);}
-}
-
 .branches {
   position: absolute;
   top: 0;
@@ -177,7 +166,7 @@ body {
 .branches .branch:nth-child(2n) {
   right: 0;
   float: right;
-  animation-name: branch-2;
+  animation-name: branch;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 5s;
