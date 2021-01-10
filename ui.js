@@ -3,6 +3,15 @@ $(document).on("mousemove", function(event) {
 });
 
 $(document).ready(function() {
+    
+    let phase = 0;
+    function updatePhase(val) {
+        if (phase !== 0 && phase !== 5) {
+            phase = phase + parseInt(val);
+        }
+        console.log(phase);
+    }
+
     var scrollTimer = 0;
     var lastScrollFireTime = 0;
     var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
@@ -39,12 +48,3 @@ $(document).ready(function() {
 
     });    
 });
-
-
-let phase = 0;
-function updatePhase(val) {
-    if (phase !== 0 && phase !== 5) {
-        phase = phase + parseInt(val);
-    }
-    console.log(phase);
-}
