@@ -34,6 +34,7 @@ body {
   position: relative;
   margin: auto;
   top: calc(50vh - 147px);
+  perspective: 1000px;
   animation-name: ambient-flutter;
   animation-duration: 5s;
   animation-iteration-count: infinite;
