@@ -120,7 +120,6 @@ body {
   animation-name: branch-2;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 5s;
 }
 
 .branches .branch:nth-child(1) {
