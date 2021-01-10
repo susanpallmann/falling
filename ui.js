@@ -2,16 +2,15 @@ $(document).on("mousemove", function(event) {
     $('#character').css('left', event.pageX - ($('#character').width()/2) + 'px');
 });
 
-let phase = 0;
-    var scrollTimer = 0;
-    var lastScrollFireTime = 0;
-
 $(document).ready(function() {
     
-    
+    let phase = 0;
+    var scrollTimer = 0;
+    var lastScrollFireTime = 0;
     
     function updatePhase(val) {
         if (phase !== 0 && phase !== 5) {
+            console.log(phase + parseInt(val));
             phase = phase + parseInt(val);
         }
         console.log(phase);
