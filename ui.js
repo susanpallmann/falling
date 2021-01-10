@@ -16,6 +16,7 @@ $(document).ready(function() {
         else{
             //scroll down
             console.log('down');
+            $('#background').css('background-color', 'red');
         }   
     });
 });
