@@ -74,6 +74,7 @@ body {
 
 .branches {
   position: absolute;
+  filter: blur(40px);
 }
 
 .branches .branch {
