@@ -238,6 +238,7 @@ body {
   animation-duration: 4s;
   top: calc(100vh);
   transform: scale(130%);
+  filter: hue-rotate(-5deg);
 }
 
 .branches .branch:nth-child(2n-1) {
