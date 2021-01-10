@@ -18,14 +18,25 @@ body {
 }
 
 @-webkit-keyframes ambient-flutter {
-  0%   {rotate3d(1, 1, 0, 0deg);}
-  20%   {rotate3d(1, 1, 0, 15deg);}
-  40%   {rotate3d(1, 0, 0, 15deg);}
-  60%   {rotate3d(-1, 1, 0, 20deg);}
-  50%   {rotate3d(1, 1, 0, 0deg);}
-  70%   {rotate3d(1, 1, 0, 0deg);}
-  80%   {rotate3d(1, 1, 0, 0deg);}
-  100% {rotate3d(1, 1, 0, 0deg);}
+  0%    {transform: rotate3d(1, 1, 0, 0deg);}
+  20%   {transform: rotate3d(1, 1, 0, 15deg);}
+  40%   {transform: rotate3d(1, 0, 0, 15deg);}
+  60%   {transform: rotate3d(-1, 1, 0, 20deg);}
+  50%   {transform: rotate3d(1, 1, 0, 0deg);}
+  70%   {transform: rotate3d(1, 1, 0, 0deg);}
+  80%   {transform: rotate3d(1, 1, 0, 0deg);}
+  100%  {transform: rotate3d(1, 1, 0, 0deg);}
+}
+
+@keyframes ambient-flutter {
+  0%    {transform: rotate3d(1, 1, 0, 0deg);}
+  20%   {transform: rotate3d(1, 1, 0, 15deg);}
+  40%   {transform: rotate3d(1, 0, 0, 15deg);}
+  60%   {transform: rotate3d(-1, 1, 0, 20deg);}
+  50%   {transform: rotate3d(1, 1, 0, 0deg);}
+  70%   {transform: rotate3d(1, 1, 0, 0deg);}
+  80%   {transform: rotate3d(1, 1, 0, 0deg);}
+  100%  {transform: rotate3d(1, 1, 0, 0deg);}
 }
 
 #character {
