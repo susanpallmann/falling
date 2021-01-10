@@ -25,10 +25,10 @@ body {
     opacity: 0;
   }
   11% {
-      opacity: 1;
+    opacity: 1;
   }
   12% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -40,10 +40,10 @@ body {
     opacity: 0;
   }
   11% {
-      opacity: 1;
+    opacity: 1;
   }
   12% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -167,6 +167,7 @@ body {
 #character .blink {
   height: 100%;
   width: 100%;
+  opacity: 0;
   background-repeat: no-repeat;
   background-image: url('assets/character/character-expression-blink.svg');
   position: absolute;
