@@ -93,8 +93,9 @@ body {
 
 .branches .branch {
   position: relative;
+  background-repeat: no-repeat;
   animation-name: branch;
-  animation-duration: 30s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -105,6 +106,7 @@ body {
 
 .branches .branch:nth-child(2n) {
   right: 0;
+  float: right;
   animation-delay: 15s;
 }
 
