@@ -41,6 +41,11 @@ body {
   position: absolute;
 }
 
+@keyframes cloud {
+  0%   {top:: calc(100vh);}
+  100% {top: -800px;}
+}
+
 .clouds {
   position: absolute;
   width: 100%;
@@ -54,4 +59,7 @@ body {
   width: 1200px;
   filter: blur(10px);
   display: inline-block;
+  animation-name: cloud;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
 }
