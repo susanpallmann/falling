@@ -2,9 +2,14 @@ $(document).on("mousemove", function(event) {
     $('#character').css('left', event.pageX - ($('#character').width()/2) + 'px');
 });
 
+let phase = 0;
+    var scrollTimer = 0;
+    var lastScrollFireTime = 0;
+
 $(document).ready(function() {
     
-    let phase = 0;
+    
+    
     function updatePhase(val) {
         if (phase !== 0 && phase !== 5) {
             phase = phase + parseInt(val);
@@ -12,8 +17,7 @@ $(document).ready(function() {
         console.log(phase);
     }
 
-    var scrollTimer = 0;
-    var lastScrollFireTime = 0;
+    
     var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
     $('#story').bind(mousewheelevt, function(e){
         var evt = window.event || e //equalize event object     
