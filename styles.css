@@ -19,61 +19,61 @@ body {
 
 @-webkit-keyframes blink-1 {
   0% {
-    display: none;
+    opacity: 0;
   }
   10% {
-    display: none;
+    opacity: 0;
   }
   11% {
-      display: block;
+      opacity: 1;
   }
   12% {
-      display: none;
+      opacity: 0;
   }
 }
 
 @keyframes blink-1 {
   0% {
-    display: none;
+    opacity: 0;
   }
   10% {
-    display: none;
+    opacity: 0;
   }
   11% {
-      display: block;
+      opacity: 1;
   }
   12% {
-      display: none;
+      opacity: 0;
   }
 }
 
 @-webkit-keyframes blink-2 {
   0% {
-    display: block;
+    opacity: 1;
   }
   10% {
-    display: block;
+    opacity: 1;
   }
   11% {
-      display: none;
+    opacity: 0;
   }
   12% {
-      display: block;
+    opacity: 1;
   }
 }
 
 @keyframes blink-2 {
   0% {
-    display: block;
+    opacity: 1;
   }
   10% {
-    display: block;
+    opacity: 1;
   }
   11% {
-      display: none;
+    opacity: 0;
   }
   12% {
-      display: block;
+    opacity: 1;
   }
 }
 
