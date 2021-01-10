@@ -20,3 +20,16 @@ $(document).ready(function() {
         }   
     });
 });
+
+$(window).on('touchend', function(e){
+    var currentPoint = e.originalEvent.changedTouches[0].pageY;
+    if(lastPoint != null && lastPoint < currentPoint ){
+        //swiped down
+        console.log('you scrolled up');
+    }else if(lastPoint != null && lastPoint > currentPoint){
+        //swiped up
+        console.log('down');
+        $('#background').css('background-color', 'red');
+    }
+    lastPoint = currentPoint;
+});
