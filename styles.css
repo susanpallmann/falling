@@ -209,7 +209,7 @@ body {
   filter: blur(10px);
   display: inline-block;
   animation-name: cloud;
-  animation-duration: 40s;
+  animation-duration: 80s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -235,7 +235,7 @@ body {
 .branches .branch {
   position: absolute;
   background-repeat: no-repeat;
-  animation-duration: 10s;
+  animation-duration: 4s;
   top: calc(100vh);
 }
 
@@ -252,7 +252,7 @@ body {
   animation-name: branch;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 5s;
+  animation-delay: 2s;
 }
 
 .branches .branch:nth-child(1) {
