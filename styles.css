@@ -74,25 +74,27 @@ body {
 
 @-webkit-keyframes branch {
   0%   {top: calc(100vh);}
-  100% {top: -100%;}
+  100% {top: calc(-100vh);}
 }
 
 @keyframes branch {
   0%   {top: calc(100vh);}
-  100% {top: -100%;}
+  100% {top: calc(-100vh);}
 }
 
 @-webkit-keyframes branch-2 {
   0%   {top: calc(50vh);}
-  50%   {top: -100%;}
+  50%   {top: calc(-100vh);}
   51%   {top: calc(100vh);}
   100% {top: calc(50vh);}
 }
 
 
 @keyframes branch-2 {
-  0%   {top: calc(100vh);}
-  100% {top: -100%;}
+  0%   {top: calc(50vh);}
+  50%   {top: calc(-100vh);}
+  51%   {top: calc(100vh);}
+  100% {top: calc(50vh);}
 }
 
 .branches {
