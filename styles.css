@@ -143,7 +143,7 @@ body {
   position: relative;
   top: calc(50vh - 147px);
   left: 0;
-  transition: all 0.5s;
+  transition: all 0.2s;
   perspective: 1000px;
   animation-name: ambient-flutter;
   animation-duration: 10s;
