@@ -105,6 +105,7 @@ body {
   position: absolute;
   background-repeat: no-repeat;
   animation-duration: 10s;
+  top: calc(100vh);
 }
 
 .branches .branch:nth-child(2n-1) {
