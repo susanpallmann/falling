@@ -17,12 +17,27 @@ body {
   position: relative;
 }
 
+@-webkit-keyframes ambient-flutter {
+  0%   {rotate3d(1, 1, 0, 0deg);}
+  20%   {rotate3d(1, 1, 0, 15deg);}
+  40%   {rotate3d(1, 0, 0, 15deg);}
+  60%   {rotate3d(-1, 1, 0, 20deg);}
+  50%   {rotate3d(1, 1, 0, 0deg);}
+  70%   {rotate3d(1, 1, 0, 0deg);}
+  80%   {rotate3d(1, 1, 0, 0deg);}
+  100% {rotate3d(1, 1, 0, 0deg);}
+}
+
 #character {
   height: 294px;
   width: 200px;
   position: relative;
   margin: auto;
   top: calc(50vh - 147px);
+  animation-name: ambient-flutter;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 #character .background {
