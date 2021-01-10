@@ -120,18 +120,19 @@ body {
   animation-name: branch-2;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-delay: 5s;
 }
 
 .branches .branch:nth-child(1) {
   background-image: url('assets/scenery/branch-1.png');
   height: 100%;
   width: 45%;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .branches .branch:nth-child(2) {
   background-image: url('assets/scenery/branch-2.png');
   height: 100%;
   width: 18%;
-  background-size: 100%;
+  background-size: contain;
 }
