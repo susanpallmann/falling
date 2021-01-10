@@ -3,8 +3,41 @@ $(document).on("mousemove", function(event) {
 });
 
 $(document).ready(function() {
-    
-    
+    var scrollTimer = 0;
+    var lastScrollFireTime = 0;
+    var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
+    $('#story').bind(mousewheelevt, function(e){
+        var evt = window.event || e //equalize event object     
+        evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
+        var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
+
+        var scrollInterval = 100;
+        var now = new Date().getTime();
+
+        function processScroll() {
+            if(delta > 0) {
+                //scroll up
+                console.log('up');
+                updatePhase(-1);
+            }
+            else{
+                //scroll down
+                updatePhase(1);
+            } 
+        }
+        if (!scrollTimer) {
+            if (now - lastScrollFireTime > (3 * scrollInterval)) {
+                processScroll();   // fire immediately on first scroll
+                lastScrollFireTime = now;
+            }
+            scrollTimer = setTimeout(function() {
+                scrollTimer = null;
+                lastScrollFireTime = new Date().getTime();
+                processScroll();
+            }, scrollInterval);
+        }
+
+    });    
 });
 
 
@@ -15,39 +48,3 @@ function updatePhase(val) {
     }
     console.log(phase);
 }
-
-var scrollTimer
-var lastScrollFireTime = 0;
-var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
-$('#story').bind(mousewheelevt, function(e){
-    var evt = window.event || e //equalize event object     
-    evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
-    var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
-
-    var scrollInterval = 100;
-    var now = new Date().getTime();
-
-    function processScroll() {
-        if(delta > 0) {
-            //scroll up
-            console.log('up');
-            updatePhase(-1);
-        }
-        else{
-            //scroll down
-            updatePhase(1);
-        } 
-    }
-    if (!scrollTimer) {
-        if (now - lastScrollFireTime > (3 * scrollInterval)) {
-            processScroll();   // fire immediately on first scroll
-            lastScrollFireTime = now;
-        }
-        scrollTimer = setTimeout(function() {
-            scrollTimer = null;
-            lastScrollFireTime = new Date().getTime();
-            processScroll();
-        }, scrollInterval);
-    }
-
-});
