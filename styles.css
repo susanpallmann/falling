@@ -71,3 +71,33 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
+.branches {
+  position: absolute;
+}
+
+.branches .branch {
+  position: relative;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+}
+
+.branches .branch:nth-child(2n-1) {
+  left: 0;
+}
+
+.branches .branch:nth-child(2n) {
+  right: 0;
+}
+
+.branches .branch:nth-child(1) {
+  background-image: url('assets/scenery/branch-1.svg');
+  height: 800px;
+  width: 1200px;
+}
+
+.branches .branch:nth-child(2) {
+  background-image: url('assets/scenery/branch-2.svg');
+  height: 800px;
+  width: 1200px;
+}
