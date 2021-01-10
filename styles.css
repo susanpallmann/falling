@@ -79,7 +79,7 @@ body {
 .branches .branch {
   position: relative;
   background-repeat: no-repeat;
-  filter: blur(10px);
+  filter: url("#sharpBlur");
 }
 
 .branches .branch:nth-child(2n-1) {
