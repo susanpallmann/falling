@@ -102,7 +102,7 @@ body {
 }
 
 .branches .branch {
-  position: relative;
+  position: absolute;
   background-repeat: no-repeat;
   animation-duration: 10s;
 }
