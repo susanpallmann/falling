@@ -69,4 +69,5 @@ body {
   animation-name: cloud;
   animation-duration: 40s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
