@@ -107,7 +107,7 @@ body {
 .branches .branch:nth-child(2n) {
   right: 0;
   float: right;
-  animation-delay: 15s;
+  animation-delay: 10s;
 }
 
 .branches .branch:nth-child(1) {
