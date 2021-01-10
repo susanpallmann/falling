@@ -17,6 +17,66 @@ body {
   position: relative;
 }
 
+@-webkit-keyframes blink-1 {
+  0% {
+    display: none;
+  }
+  10% {
+    display: none;
+  }
+  11% {
+      display: block;
+  }
+  12% {
+      display: none;
+  }
+}
+
+@keyframes blink-1 {
+  0% {
+    display: none;
+  }
+  10% {
+    display: none;
+  }
+  11% {
+      display: block;
+  }
+  12% {
+      display: none;
+  }
+}
+
+@-webkit-keyframes blink-2 {
+  0% {
+    display: block;
+  }
+  10% {
+    display: block;
+  }
+  11% {
+      display: none;
+  }
+  12% {
+      display: block;
+  }
+}
+
+@keyframes blink-2 {
+  0% {
+    display: block;
+  }
+  10% {
+    display: block;
+  }
+  11% {
+      display: none;
+  }
+  12% {
+      display: block;
+  }
+}
+
 @-webkit-keyframes ambient-flutter {
   0% {
     transform: rotate3d(1, 1, 0, 0deg);
@@ -98,6 +158,17 @@ body {
   background-repeat: no-repeat;
   background-image: url('assets/character/character-expression.svg');
   position: absolute;
+  animation-name: blink-2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#character .blink {
+  animation-name: blink-1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes cloud {
