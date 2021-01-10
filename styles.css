@@ -41,8 +41,13 @@ body {
   position: absolute;
 }
 
+@-webkit-keyframes cloud {
+  0%   {top: calc(100vh);}
+  100% {top: -800px;}
+}
+
 @keyframes cloud {
-  0%   {top:: calc(100vh);}
+  0%   {top: calc(100vh);}
   100% {top: -800px;}
 }
 
@@ -57,6 +62,7 @@ body {
   background-image: url('assets/scenery/cloud.svg');
   height: 800px;
   width: 1200px;
+  top: calc(100vh);
   filter: blur(10px);
   display: inline-block;
   animation-name: cloud;
