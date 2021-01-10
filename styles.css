@@ -43,6 +43,8 @@ body {
 
 .clouds {
   position: absolute;
+  width: 100%;
+  text-align: center;
 }
 
 .clouds .cloud {
@@ -51,4 +53,5 @@ body {
   height: 800px;
   width: 1200px;
   filter: blur(10px);
+  display: inline-block;
 }
