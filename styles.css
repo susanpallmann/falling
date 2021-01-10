@@ -30,6 +30,9 @@ body {
   12% {
     opacity: 0;
   }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes blink-1 {
@@ -43,6 +46,9 @@ body {
     opacity: 1;
   }
   12% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
