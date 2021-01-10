@@ -83,18 +83,14 @@ body {
 }
 
 @-webkit-keyframes branch-2 {
-  0%   {top: calc(50vh);}
-  50%   {top: calc(-100vh);}
-  51%   {top: calc(100vh);}
-  100% {top: calc(50vh);}
+  0%   {top: calc(100vh);}
+  100% {top: calc(-100vh);}
 }
 
 
 @keyframes branch-2 {
-  0%   {top: calc(50vh);}
-  50%   {top: calc(-100vh);}
-  51%   {top: calc(100vh);}
-  100% {top: calc(50vh);}
+  0%   {top: calc(100vh);}
+  100% {top: calc(-100vh);}
 }
 
 .branches {
@@ -124,6 +120,7 @@ body {
   animation-name: branch-2;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-delay: 5s;
 }
 
 .branches .branch:nth-child(1) {
